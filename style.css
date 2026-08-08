@@ -1,0 +1,304 @@
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#667eea,#764ba2);
+
+}
+
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+/* ===========================
+   ToDo Box
+=========================== */
+
+.todo{
+
+    width:430px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+
+/* ===========================
+   Heading
+=========================== */
+
+.todo h1{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ===========================
+   Input Box
+=========================== */
+
+.input-box{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+
+.input-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+}
+
+
+.input-box button{
+
+    padding:15px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#ff5c5c;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+.input-box button:hover{
+
+    background:#ff2d2d;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ===========================
+   Info
+=========================== */
+
+.info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+
+.info button{
+
+    padding:10px 15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+
+.info button:hover{
+
+    background:#f57c00;
+
+}
+
+
+/* ===========================
+   Task List
+=========================== */
+
+#taskList{
+
+    list-style:none;
+
+}
+
+
+#taskList li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.2);
+
+    margin-bottom:12px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    color:white;
+
+}
+
+
+/* Completed Task */
+
+.completed{
+
+    text-decoration:line-through;
+
+    opacity:.6;
+
+}
+
+
+/* Buttons */
+
+.actions button{
+
+    margin-left:5px;
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+
+.edit{
+
+    background:#2196f3;
+
+}
+
+
+.delete{
+
+    background:#f44336;
+
+}
+
+
+.done{
+
+    background:#4caf50;
+
+}
+
+
+.actions button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:500px){
+
+.todo{
+
+width:90%;
+
+}
+
+.input-box{
+
+flex-direction:column;
+
+}
+
+.input-box button{
+
+width:100%;
+
+}
+
+}
+
+
